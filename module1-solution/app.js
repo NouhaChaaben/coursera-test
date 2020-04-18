@@ -11,6 +11,7 @@ function LunchCheckController($scope){
   $scope.lunch="";
   $scope.message="";
   $scope.messageFont="";
+  $scope.textBoxBorder="";
   //dividing the string introduced by user using comma separator
   function splitMenu()
   {
@@ -36,9 +37,11 @@ function LunchCheckController($scope){
     {
       $scope.message="Please enter data first";
       $scope.messageFont="redFont";
+      $scope.textBoxBorder="redBorder";
     }
     else {
       $scope.messageFont="greenFont";
+      $scope.textBoxBorder="greenBorder";
       var numberOfItem= splitMenu();
       if(numberOfItem<=3)
       {

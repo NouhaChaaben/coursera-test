@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
       .message { font-size: 1.3em; font-weight: bold; }
-      .redFont {color:red;border-color:red;border-style: solid;}
-      .greenFont {color:green;border-color:green;border-style: solid;}
+      .redFont {color:red;}
+      .redBorder{border-color:red;border-style: solid;}
+      .greenBorder{border-color:green;border-style: solid;}
+      .greenFont {color:green;}
       .comment { font-size: 0.9em; font-style: italic; }
     </style>
   </head>
@@ -20,7 +22,7 @@
          <div class="form-group">
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control"
+             class="form-control {{textBoxBorder}}"
              ng-model="lunch">
              <p class="comment">empty items are not considered. So for the example "item 1, item2, ,item3, " the number of items is 3 </p>
          </div>
