@@ -5,7 +5,7 @@ input[type="text"] {
   width: 200px;
   float: left;
 }
-table{
+.found{
   clear:left;
 }
 .narrow-button {

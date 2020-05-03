@@ -1,4 +1,4 @@
-<table class="table-primary table-bordered" ng-if="list.items.length">
+<table class="table-primary table-bordered found" ng-if="list.items.length">
   <tr>
     <th>Name</th>
     <th>Short Name</th>
@@ -12,3 +12,4 @@
     <td>  <button ng-click="list.onRemove({index: $index});">Don't Want this one!</button> </td>
 </tr>
 </table>
+<div ng-if="!list.items.length" class="found">Nothing found</div>
