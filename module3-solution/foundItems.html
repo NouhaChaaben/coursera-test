@@ -1,0 +1,14 @@
+<table class="table-primary table-bordered" ng-if="list.items.length">
+  <tr>
+    <th>Name</th>
+    <th>Short Name</th>
+    <th>Description</th>
+    <th>Don't want</th>
+  </tr>
+  <tr ng-repeat="item in list.items">
+    <td>  {{item.name}} </td>
+    <td>  {{item.short_name}}</td>
+    <td>  {{item.description}}</td>
+    <td>  <button ng-click="list.onRemove({index: $index});">Don't Want this one!</button> </td>
+</tr>
+</table>
