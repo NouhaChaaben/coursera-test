@@ -20,7 +20,11 @@
     </div>
 
     <!-- found-items should be implemented as a component -->
-    <found-items items="controller.found" on-remove="controller.removeItem(index)"></found-items>
+    <found-items
+    items="controller.found"
+    error="{{controller.errorMessage}}"
+    on-remove="controller.removeItem(index)"></found-items>
+    <div ng-if="controller.errorMessage" class="found">Nothing found</div>
   </div>
 
 </body>

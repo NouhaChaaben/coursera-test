@@ -12,7 +12,6 @@ function FoundItemsDirective() {
     templateUrl: 'foundItems.html',
     scope: {
       items: '<',
-      //title: '@',
       onRemove: '&'
     },
   //  controller: 'FoundItemsDirectiveController as list',
@@ -27,8 +26,6 @@ function FoundItemsDirective() {
 function FoundItemsDirectiveController()
 {
   var list=this;
-
-
 }
 
 NarrowItDownController.$inject = ['MenuSearchService'];
