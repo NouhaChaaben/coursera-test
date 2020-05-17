@@ -1,0 +1,36 @@
+<div class="container" ng-if="info.isSaved">
+  <div class="">
+    <h2>User information</h2>
+  </div>
+  <table class="table table-primary table-bordered">
+  <tr>
+    <td> First Name:  </td>
+    <td>  {{info.user.firstName}}</td>
+  </tr>
+  <tr>
+    <td> Last Name:  </td>
+    <td>  {{info.user.lastName}}</td>
+  </tr>
+  <tr>
+    <td> Email:  </td>
+    <td>  {{info.user.email}}</td>
+  </tr>
+  <tr>
+    <td> Adress:  </td>
+    <td>  {{info.user.adress}}</td>
+  </tr>
+  <tr>
+    <td> Phone:  </td>
+    <td>  {{info.user.phone}}</td>
+  </tr>
+</table>
+<div class="">
+  <h4>Favorite menu</h4>
+
+<menu-item menu-item="info.user.favoriteMenu">
+</menu-item>
+</div>
+</div>
+<div class="container" ng-if="!info.isSaved">
+  Not Signed Up Yet. <a ui-sref="public.login">Sign up Now!</a>
+</div>
